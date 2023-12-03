@@ -102,7 +102,7 @@ def Register(request):
     if request.method == 'POST':
         form = MyUserCreationForm(request.POST)
         if form.is_valid():
-            # user = form.save(commit=False)  #If you want to sterilize certain data before saving it finally into the db; maybe you want to convert an upper to a lower case       
+            # user = form.save(commit=False)  #If you wanna sterilize certain data before saving it finally into the db; maybe you want to convert an upper to a lower case       
             # user.username = user.username.lower()
             user = form.save()
             login(request, user)

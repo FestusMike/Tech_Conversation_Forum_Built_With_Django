@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
 from django.db.models import Q
 from .models import Room, Topic, Message
 from .models import User

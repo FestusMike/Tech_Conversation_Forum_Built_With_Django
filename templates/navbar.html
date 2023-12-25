@@ -1,4 +1,5 @@
 {% load static %}
+{% load socialaccount %}
 <header class="header header--loggedIn">
     <div class="container">
         <a href="{% url 'home' %}" class="header__logo">
@@ -43,7 +44,10 @@
                 <p>Login</p>
             </a>
             {% endif %}
+            
+            
 
+            
             <div class="dropdown-menu">
                 <a href="{% url 'update-user' %}" class="dropdown-link"><svg version="1.1"
                         xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
